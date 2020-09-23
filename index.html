@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/floating-labels/floating-labels.css" />
+  <script> 
+    function iSignIn() {
+      let username = formsignin.username.value;
+      let password = formsignin.password.value;
+      signIn (username, password);      
+    }
+  </script>
+
+  <head>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+          <div class="col-4">
+              <form name="formsignin" id="formsignin">
+                  <h1 class="h3 mb-3 font-weight-normal text-center">Sign In</h1>
+                  <div class="form-label-group">
+                      <input type="text" class="form-control" id="signInUsername" placeholder="username" name="username" required autofocus />
+                      <label for="signInUsername"> Username </label>
+                  </div>
+                  <div class="form-label-group">
+                      <input type="password" class="form-control" id="signInPwd" placeholder="password" name="password" required />
+                      <label for="signInPwd"> Password </label>
+                  </div>
+                  <button type="button" class="btn btn-lg btn-primary btn-block" onclick="iSignIn()" >Sign In</button>
+              </form>
+          </div>
+      </div>
+    <script src="main.bundle.js"></script>
+  </body>
+</html>
